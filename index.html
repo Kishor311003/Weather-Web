@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Weather Web</title>
+</head>
+<body onload="myload()">
+  <div id="load">
+    <div class="load"></div>
+    <p>Please Wait...</p>
+  </div>
+  <div class="time-container">
+    <div id="time" ></div>
+  </div>
+  <div><span id="date"></span></div>
+  
+  <form autocomplete="on" >
+    <input type="text" placeholder=" Enter city name " id="search" /required>
+    <button id="search-button" type="button" onclick="validt()"></button>
+  </form>
+  
+<div id="container">
+  <div class="col-1">
+      <p class="pre">PRECAUTIONS</p>
+    <div id="caution">
+      <p>--------------------------------------</p>
+      <p>--------------------------------------</p>
+      <p>--------------------------------------</p>
+      <p>--------------------------------------</p>
+    </div>
+  </div>
+  
+  <main>
+      <div id="location">
+        <b>City</b>
+      </div>
+      <div id="temp">
+        <p><span id="temp-value"><b>Temp</b></span><span id="temp-unit"><b>&#176C</b></span>
+        </p>
+        <img id="temp-icon" src="img/clear-skyf.png" alt="icon">
+        <p id="climate">
+          <b>Climate</b>
+        </p>
+      </div>
+  </main>
+  
+  <div class="col-3">
+    <div class="info">
+        <div class="in">
+          <div>Humidity</div>
+          <div id="humi">--%</div>
+        </div>
+        <div class="in">
+          <div>Pressure</div>
+          <div id="pre">--hPa</div>
+        </div>
+        <div class="in">
+          <div>Wind Speed</div>
+          <div id="wind">--m/s</div>
+        </div>
+        <div class="in">
+          <div>Sunrise</div>
+          <div id="rise">--:-- am</div>
+        </div>
+        <div class="in">
+          <div>Sunset</div>
+          <div id="set">--:-- pm</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="future">
+  
+  <div class="a">
+    <div class="day">Day</div>
+    <div class="item">
+    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon" class="b">
+       <div> <center>Climate</center></div>
+       <div class="t"><center>Temp</center></div>
+    </div>
+  </div>
+  
+  <div class="a">
+    <div class="day">Day</div>
+     <div class="item">
+    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon" class="b">
+       <div> <center>Climate</center></div>
+       <div class="t"><center>Temp</center></div>
+    </div>
+  </div>
+  
+  <div class="a">
+    <div class="day">Day</div>
+     <div class="item">
+       <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon" class="b">
+       <div> <center>Climate</center></div>
+       <div><center class="t">Temp</center></div>
+     </div>
+  </div>
+  
+  <div class="a">
+    <div class="day">Day</div>
+     <div class="item">
+       <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon" class="b">
+       <div> <center>Climate</center></div>
+       <div class="t"><center>Temp</center></div>
+     </div>
+  </div>
+  
+  <div class="a">
+    <div class="day">Day</div>
+     <div class="item">
+       <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon" class="b">
+       <div> <center>Climate</center></div>
+       <div class="t"><center>Temp</center></div>
+     </div>
+  </div>
+  
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
